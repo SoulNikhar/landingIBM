@@ -1,0 +1,34 @@
+.impact-stories-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.story-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.story-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.story-card h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.story-card p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}

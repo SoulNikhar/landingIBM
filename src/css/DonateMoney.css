@@ -1,0 +1,156 @@
+
+.donation-form-container {
+    /* border: 2px solid red; */
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5vh 0;
+    border-radius: 30px;
+    height: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    h2{
+        /* border: 2px solid red; */
+        font-size: 5vmin;
+    }
+    h3{
+        padding: 2vh 0;
+        font-size: 3vmin;
+    }
+    *{
+        background-color: #fff;
+    }
+    & > *{
+        /* border: 2px solid red; */
+    }
+}
+.donate-money{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+    padding: 0;
+}
+
+.donation-form-container h1, .donation-form-container h2, .donation-form-container h3{
+    text-align: center;
+    padding: 0;
+}
+
+.amount-selection, .personal-details, .payment-method, .confirmation {
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    max-width: 100%;
+}
+.amount-selection{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3vw;
+    label{
+        text-align: center;
+        &>input:nth-child(1){
+            scale: 1.5;
+        }
+        display: flex;
+        gap: 1vh;
+        font-size: 2.7vmin;
+    }
+    & > div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+        justify-content: center;
+    }
+    & > label{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        input:nth-child(2){
+            width: min(400px, 90%);
+            border-radius: 20px;
+        }
+    }
+}
+
+.personal-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & > div{
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 2px solid red; */
+        justify-content: center;
+        gap: 1vh;
+        label{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            gap: 1.2rem;
+            input{
+                border-radius: 20px;
+                width: min(400px, 60%);
+            }
+        }
+    }
+
+}
+
+.payment-method{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1vw;
+    h3{
+        width: 100%;
+    }
+    gap: 2vw;
+    label{
+        display: flex;
+        gap: 1vw;
+        input{
+            scale: 1.5;
+        }
+    }
+}
+
+.confirmation{
+    display: flex;
+    justify-content: center;
+    padding: 0 2vw;
+    label{
+        gap: 2vw;
+        input{
+            scale: 1.5;
+        }
+    }
+}
+
+label {
+    display: flex;
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#donate {
+    width: 20vw;
+    padding: 2vh 2vw;
+    font-size: 2.5vmin;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 23px;
+    &:hover {
+        background-color: #45a049;
+    }
+}
+
